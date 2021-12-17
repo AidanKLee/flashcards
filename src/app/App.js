@@ -20,7 +20,7 @@ function App() {
         <nav className='appHeaderNav'>
           <ul className='appHeaderNavList'>
             <li className='appHeaderNavListItem'>
-              <NavLink activeclassname='active' to='/'><p>Topics</p></NavLink>
+              <NavLink activeclassname='active' to='/topics'><p>Topics</p></NavLink>
             </li>
             <li className='appHeaderNavListItem'>
               <NavLink activeclassname='active' to='/quizzes'><p>Quizzes</p></NavLink>
@@ -38,6 +38,7 @@ function App() {
           <Routes>
             <Route path='/'>
               <Route path='' element={<Topics/>}/>
+              <Route path='topics' element={<Topics/>}/>
               <Route path='topics/newTopic' element={<NewTopicForm/>}/>
               <Route path='topics/:topicId' element={<Topic/>}/>
               <Route path='quizzes' element={<Quizzes/>}/>

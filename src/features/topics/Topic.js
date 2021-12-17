@@ -69,7 +69,7 @@ function Topic() {
                 </h1>
                 <img className='appMainSectionsHeaderImg' src={topic.icon} alt={topic.name}/>
             </div>
-            {renderQuizzes()}
+            {topic.quizIds.length > 0 ? renderQuizzes() : <h6>There are currently no quizzes created for this topic. Head to the new quiz page to create your first {topic.name} quiz.</h6>}
         </section>
     )
 }
