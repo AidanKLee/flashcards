@@ -1,0 +1,175 @@
+.mainNewQuizHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h6 {
+    text-align: center;
+}
+
+.mainNewQuizHeaderImg {
+    background-color: rgba(110, 110, 155, 0.1);
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.mainNewQuizHeaderImg:hover {
+    background-color: rgba(110, 110, 155, 0.2);
+    transform: scale(1.1);
+}
+
+.mainNewQuizHeaderImg:active {
+    background-color: rgba(110, 110, 155, 0.3);
+    transform: scale(.9);
+}
+
+.appMainQuizzesList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.appMainQuizzesListItem {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 348px;
+    padding: 16px;
+    background-color: rgba(110, 110, 155, .1);
+    border-radius: 8px;
+    box-shadow: 
+        0px 0px 0px rgba(0, 0, 0, .3),
+        inset 3px 3px 5px rgba(255, 255, 255, 0.5),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.1);
+    transition: all 1s;
+}
+
+.appMainQuizzesListItem:hover {
+    transform: scale(1.1);
+    box-shadow: 
+        3px 3px 5px rgba(0, 0, 0, .3),
+        inset 3px 3px 5px rgba(255, 255, 255, 0.5),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* .appMainQuizzesListItem:active {
+    
+} */
+
+.appMainQuizzesListItem img {
+    height: 80px;
+    width: 80px;
+    padding: 16px;
+}
+
+.appMainQuizzesListItemInfo {
+    line-height: 1.2;
+    padding-right: 16px;
+}
+
+.formAddCard h3 {
+    padding: 16px 0;
+}
+
+.formAddCardRemove {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.formAddCardRemove svg {
+    background-color: rgba(110, 110, 155, 0.1);
+    padding: 8px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.formAddCardRemoveLabel {
+    height: 48px;
+}
+
+.formAddCardRemoveButton {
+    display: none;
+    height: 32px;
+    width: 32px !important;
+    margin: 0 0 16px 0 !important;
+    border-radius: 50%;
+}
+
+.formAddCardRemove svg:hover {
+    background-color: rgba(110, 110, 155, 0.2);
+    transform: scale(1.1);
+}
+
+.formAddCardRemove svg:active {
+    background-color: rgba(110, 110, 155, 0.3);
+    transform: scale(.9);
+}
+
+.appMainQuiz {
+    height: calc(100% - 55px);
+}
+
+.appMainQuizTopicText {
+    margin-bottom: 16px;
+}
+
+.appMainQuizCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 48px);
+    width: 100%;
+    background: rgb(110,110,255);
+    background: linear-gradient(135deg, rgba(110,110,255,1) 0%, rgba(110,110,255,1) 35%, rgba(110,110,255,0.8) 100%);
+    font-size: 5rem;
+    color: rgb(250, 250, 250);
+    font-weight: bold;
+    padding: 32px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 4px solid rgb(200, 200, 0);
+    line-height: 1.1;
+}
+
+.appMainQuizCard h2 {
+    position: absolute;
+    top: 16px;
+    font-size: 1rem;
+}
+
+.appMainQuizCard p {
+    z-index: 10;
+}
+
+.appMainQuizCardImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150%;
+    width: 150%;
+    filter: opacity(.05);
+}
+
+.smallPrint {
+    font-size: .8rem;
+    font-weight: normal;
+    position: absolute;
+    bottom: 16px;
+}
+
+@media only screen and (max-width: 500px) {
+    .appMainQuizCard {
+        font-size: 3rem;
+    }
+}

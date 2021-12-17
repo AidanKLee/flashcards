@@ -1,0 +1,47 @@
+.appMainTopicsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.appMainTopicsListLink {
+    margin: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.appMainTopicsListItem {
+    list-style-type: none;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    padding: 16px;
+    background-color: rgba(110, 110, 155, 0.1);
+    border-radius: 8px;
+    line-height: 1.2;
+    text-align: center;
+    box-shadow: 
+        0px 0px 0px rgba(0, 0, 0, .3),
+        inset 3px 3px 5px rgba(255, 255, 255, 0.5),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.1);
+    transition: all 1s;
+}
+
+.appMainTopicsListItem:hover {
+    transform: scale(1.1);
+    box-shadow: 
+        3px 3px 5px rgba(0, 0, 0, .3),
+        inset 3px 3px 5px rgba(255, 255, 255, 0.5),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.appMainTopicsListItem img {
+    height: 64px;
+    width: 64px;
+    margin: 8px;
+}
